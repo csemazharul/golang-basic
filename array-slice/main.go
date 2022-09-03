@@ -21,4 +21,8 @@ func main() {
 	
 	sort.IntsAreSorted(marks)
 	fmt.Println(marks)
+
+	//remove slide in arrray
+	marks = append(marks[:3], marks[4:]...)
+	fmt.Println(marks)
 }
